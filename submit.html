@@ -1,0 +1,77 @@
+<!-- Template Appears when the Person Download the Letter -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Details</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+
+</head>
+
+<body>
+
+    <div class="sub-container">
+        <div class="details">
+
+            <table>
+                <tr>
+                    <td><label for="name"  class="label-sub">Name : </label></td>
+                    <td><input type="text" placeholder="Mohit Upadhyay" class="ser-box name" ></td>
+                </tr>
+
+                <tr>
+                    <td><label for="name" class="label-sub">Relation : </label></td>
+                    <td><input type="text" placeholder="Friend / Family " class="ser-box relation" ></td>
+                </tr>
+
+                <tr>
+                    <td><label for="name" class="label-sub">Address : </label></td>
+                    <td><input type="text" placeholder="Agra / Delhi " class="ser-box address" ></td>
+                </tr>
+
+                <!-- <tr>           for more input template 
+                    <td><label for="name" class="label-sub">Address : </label></td>
+                    <td><input type="text" placeholder="Agra / Delhi " class="ser-box address" ></td>
+                </tr> -->
+            </table>
+
+
+
+            <!-- <label for="name"  class="label-sub">Name: </label>
+            <input type="text" placeholder="Mohit Upadhyay" class="ser-box name" >
+            <br>
+            <label for="name" class="label-sub">Relation : </label>
+            <input type="text" placeholder="Friend / Family " class="ser-box relation" >
+            <br>
+            <label for="name" class="label-sub">Address : </label>
+            <input type="text" placeholder="Agra / Delhi " class="ser-box address" >
+            <br> -->
+
+
+
+            <button class="join-btn btn" onclick="templatePdf()" > Submit</button>
+            <button class="join-btn">Reset</button>
+        </div>
+
+        <div class="photos">
+            <img class="imgs" src="https://images.unsplash.com/photo-1641296834408-b09a187937d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGl3YWxpJTIwcG9vamF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            <img class="imgs" src="https://images.unsplash.com/photo-1606293926075-69a00dbfde81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZGl3YWxpJTIwcG9vamF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            <img class="imgs" src="https://images.unsplash.com/photo-1573560895417-aa8229edfafd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGl3YWxpJTIwY3JhY2tlcnN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            <img class="imgs" src="https://images.unsplash.com/photo-1574380965762-d7af37362e0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGl3YWxpJTIwY3JhY2tlcnN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
